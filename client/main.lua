@@ -670,6 +670,7 @@ RegisterNUICallback('PayInvoice', function(data, cb)
         cb(CanPay)
     end, society, amount, invoiceId, senderCitizenId)
     TriggerServerEvent('qb-phone:server:BillingEmail', data, true)
+    TriggerServerEvent('jim-payments:Tickets:Give', data)
 end)
 
 RegisterNUICallback('DeclineInvoice', function(data, cb)
