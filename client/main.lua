@@ -669,8 +669,8 @@ RegisterNUICallback('PayInvoice', function(data, cb)
         if CanPay then PhoneData.Invoices = Invoices end
         cb(CanPay)
     end, society, amount, invoiceId, senderCitizenId)
-    TriggerServerEvent('qb-phone:server:BillingEmail', data, true)
     TriggerServerEvent('jim-payments:Tickets:Give', data)
+    TriggerServerEvent('qb-phone:server:BillingEmail', data, true)
 end)
 
 RegisterNUICallback('DeclineInvoice', function(data, cb)
