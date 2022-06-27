@@ -768,6 +768,8 @@ RegisterNUICallback('PostNewTweet', function(data, cb)
             end
         end
 
+        TriggerServerEvent('qb-log:server:CreateLog', 'twitter', 'New Post', 'twitterblue', '**'..PhoneData.PlayerData.charinfo.firstname..' '..PhoneData.PlayerData.charinfo.lastname..' : **'..TwitterMessage, false, data.url)
+
         PhoneData.Tweets[#PhoneData.Tweets+1] = TweetMessage
         Wait(100)
         cb(PhoneData.Tweets)
