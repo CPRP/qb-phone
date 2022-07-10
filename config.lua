@@ -51,7 +51,7 @@ Config.PhoneApplications = {
         tooltipText = "Twitter",
         tooltipPos = "top",
         job = false,
-        blockedjobs = {},
+        blockedjobs = {"police", "ambulance"},
         slot = 4,
         Alerts = 0,
     },
