@@ -30,7 +30,7 @@ SetupLawyers = function(data) {
             }
         });
 
-        $(".lawyers-list").append('<h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; border-top-left-radius: .5vh; border-top-right-radius: .5vh; width:100%; display:block; background-color: rgb(42, 137, 214);">lawyer (' + lawyer.length + ')</h1>');
+        $(".lawyers-list").append('<h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; border-top-left-radius: .5vh; border-top-right-radius: .5vh; width:100%; display:block; background-color: rgb(42, 137, 214);">Lawyers (' + lawyer.length + ')</h1>');
 
         if (lawyer.length > 0) {
             $.each(lawyer, function(i, lawyer) {
@@ -108,7 +108,7 @@ SetupLawyers = function(data) {
             $(".lawyers-list").append(element);
         }
     } else {
-        $(".lawyers-list").append('<h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; border-top-left-radius: .5vh; border-top-right-radius: .5vh; width:100%; display:block; background-color: rgb(42, 137, 214);">lawyer (' + lawyer.length + ')</h1>');
+        $(".lawyers-list").append('<h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; border-top-left-radius: .5vh; border-top-right-radius: .5vh; width:100%; display:block; background-color: rgb(42, 137, 214);">Lawyers (' + lawyer.length + ')</h1>');
 
         var element = '<div class="lawyer-list"><div class="no-lawyers">There are no lawyers available.</div></div>'
         $(".lawyers-list").append(element);
