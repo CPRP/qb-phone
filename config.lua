@@ -52,7 +52,7 @@ Config.PhoneApplications = {
         tooltipText = "Twitter",
         tooltipPos = "top",
         job = false,
-        blockedjobs = {"police", "ambulance"},
+        blockedjobs = {},
         slot = 4,
         Alerts = 0,
     },
