@@ -3,7 +3,7 @@ SetupLawyers = function(data) {
     var lawyers = [];
     var pizzathis = [];
     var mechanic = [];
-    var catcafe = [];
+    var taxi = [];
     var police = [];
     var ambulance = [];
 
@@ -19,8 +19,8 @@ SetupLawyers = function(data) {
             if (lawyer.typejob == "mechanic") {
                 mechanic.push(lawyer);
             }
-            if (lawyer.typejob == "catcafe") {
-                catcafe.push(lawyer);
+            if (lawyer.typejob == "taxi") {
+                taxi.push(lawyer);
             }
             if (lawyer.typejob == "police") {
                 police.push(lawyer);
@@ -43,16 +43,16 @@ SetupLawyers = function(data) {
             $(".lawyers-list").append(element);
         }
 
-        $(".lawyers-list").append('<br><h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; width:100%; display:block; background-color: rgb(255, 190, 27);">Uwu Cat Cafe (' + catcafe.length + ')</h1>');
+        $(".lawyers-list").append('<br><h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; width:100%; display:block; background-color: rgb(255, 190, 27);">Downtown Cab Co. (' + taxi.length + ')</h1>');
 
-        if (catcafe.length > 0) {
-            $.each(catcafe, function(i, lawyer3) {
+        if (taxi.length > 0) {
+            $.each(taxi, function(i, lawyer3) {
                 var element = '<div class="lawyer-list" id="lawyerid3-' + i + '"> <div class="lawyer-list-firstletter" style="background-color: rgb(255, 190, 27);">' + (lawyer3.name).charAt(0).toUpperCase() + '</div> <div class="lawyer-list-fullname">' + lawyer3.name + '</div> <div class="lawyer-list-call"><i class="fas fa-phone"></i></div> </div>'
                 $(".lawyers-list").append(element);
                 $("#lawyerid3-" + i).data('LawyerData', lawyer3);
             });
         } else {
-            var element = '<div class="lawyer-list"><div class="no-lawyers">There are no Uwu Cat Cafe employees available.</div></div>'
+            var element = '<div class="lawyer-list"><div class="no-lawyers">There are no employees available.</div></div>'
             $(".lawyers-list").append(element);
         }
 
@@ -113,9 +113,9 @@ SetupLawyers = function(data) {
         var element = '<div class="lawyer-list"><div class="no-lawyers">There are no lawyers available.</div></div>'
         $(".lawyers-list").append(element);
 
-        $(".lawyers-list").append('<br><h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; width:100%; display:block; background-color: rgb(255, 190, 27);">Uwu Cat Cafe (' + catcafe.length + ')</h1>');
+        $(".lawyers-list").append('<br><h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; width:100%; display:block; background-color: rgb(255, 190, 27);">Downtown Cab Co. (' + taxi.length + ')</h1>');
 
-        var element = '<div class="lawyer-list"><div class="no-lawyers">There are no Uwu Cat Cafe employees available.</div></div>'
+        var element = '<div class="lawyer-list"><div class="no-lawyers">There are no employees available.</div></div>'
         $(".lawyers-list").append(element);
 
         $(".lawyers-list").append('<br><h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; width:100%; display:block; background-color: rgb(155, 15, 120);">Pizza This (' + pizzathis.length + ')</h1>');
@@ -130,7 +130,7 @@ SetupLawyers = function(data) {
         
         $(".lawyers-list").append('<br><h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; width:100%; display:block; background-color: rgb(0, 102, 255);">Police (' + police.length + ')</h1>');
 
-        var element = '<div class="lawyer-list"><div class="no-lawyers">There are no polices a available.</div></div>'
+        var element = '<div class="lawyer-list"><div class="no-lawyers">There are no police a available.</div></div>'
         $(".lawyers-list").append(element);
         
         $(".lawyers-list").append('<br><h1 style="font-size:1.641025641025641vh; padding:1.0256410256410255vh; color:#fff; margin-top:0; width:100%; display:block; background-color: rgb(255, 0, 0);">Fire & Rescue (' + ambulance.length + ')</h1>');
